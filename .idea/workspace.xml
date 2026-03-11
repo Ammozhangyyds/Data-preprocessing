@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c5434fc-c845-4edf-b59e-a48cbf32d357" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/STEP1-Data Processing-Built by Yitao_Zhang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_check/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_check/description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="3c5434fc-c845-4edf-b59e-a48cbf32d357" name="更改" comment="Created a Python package named data_check, wrote the description.py file, and included usage instructions in main.py.">
+      <change afterPath="$PROJECT_DIR$/data_check/processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +64,15 @@
       <option name="presentableId" value="Default" />
       <updated>1773132982284</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created a Python package named data_check, wrote the description.py file, and included usage instructions in main.py.">
+      <option name="closed" value="true" />
+      <created>1773213528812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773213528812</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,14 +86,14 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
                   <entry key="text">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="description" />
                       </list>
                     </value>
                   </entry>
@@ -103,5 +104,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created a Python package named data_check, wrote the description.py file, and included usage instructions in main.py." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Python package named data_check, wrote the description.py file, and included usage instructions in main.py." />
   </component>
 </project>
