@@ -253,3 +253,44 @@ class DataDescriber:
         plt.grid(axis='y', alpha=0.3)
         plt.show()
 
+    def get_percentiles(self, column_name, percentiles=None):
+        """
+        获取指定列的分位数值。
+
+        参数:
+            column_name (str): 要计算的列名
+            percentiles (list): 分位数列表，默认为 [1, 2, 3, 4, 5, 95, 96, 97, 98, 99]
+
+        返回:
+            dict: 包含各分位数值的字典
+        """
+        if column_name not in self.df.columns:
+            raise ValueError(f"列 '{column_name}' 不存在于数据框中。")
+
+        col = self.df[column_name]
+
+        # 检查是否为数值列
+        if not pd.api.types.is_numeric_dtype(col):
+            print(f"该变量是字符型，无法计算分位数")
+            return None
+
+        # 设置默认分位数
+        if percentiles is None:
+            percentiles = [1, 2, 3, 4, 5, 95, 96, 97, 98, 99]
+
+        # 转换为小数形式
+        quantile_list = [p / 100 for p in percentiles]
+
+        # 计算分位数
+        result = {}
+        for p, q in zip(percentiles, quantile_list):
+            result[f"{p}%分位数"] = col.quantile(q)
+
+        # 打印结果
+        print(f"\n===== 列 '{column_name}' 的分位数统计 =====")
+        for key, value in result.items():
+            print(f"{key}: {value:.4f}")
+        print("=" * 40)
+
+        return result
+

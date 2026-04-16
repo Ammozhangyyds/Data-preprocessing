@@ -30,6 +30,9 @@ describer = DataDescriber(df)
 describer.basic_description()           # 对DataFrame进行基本描述统计（同时在根目录下生成html文件便于查看）
 describer.column_description('A')       # 对指定列进行详细描述统计
 describer.plot_column_distribution('A') # 绘制指定列的分布直方图（仅数值列有效）
+describer.get_percentiles('A',     # 输出指定变量的分位数
+                          [1, 5, 95])# 例如：[1, 5, 95]为1%、5%、95%分位数
+
 
 # 3.1调用数据处理函数
 from data_check.processing import DataProcessing
